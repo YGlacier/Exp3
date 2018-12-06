@@ -237,6 +237,7 @@ int main (int argc, char **argv)
 
   for (int i = 0; i < framelen; i++){
     printf("%lf\n",log10(Sr[i]));
+    //printf("%lf\n",autocorrelation[i]);
   }
 
   return 0;
