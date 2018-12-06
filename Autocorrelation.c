@@ -41,7 +41,7 @@ int main (int argc, char **argv)
 
   /* cauculate autocorrelation */
   for (int r = 0; r < framelen; r++){
-    for (int t = 0; t < framelen-1-r ;t++){
+    for (int t = 0; t < framelen - 1 - r ;t++){
       //autocorrelation[r] += sdata[t]*sdata[t+r];
       autocorrelation[r] += xr[t]*xr[t+r];
     }
